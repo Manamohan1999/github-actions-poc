@@ -25,4 +25,4 @@ jobs:
     if: github.event.commits.author.name != 'Random Author'
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'The Author is Manamohan Samal'
+      - run: echo 'The Author is ${{ github.event.commits.author.name }}'
