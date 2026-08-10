@@ -2,7 +2,10 @@ name: GitHub Events Demo
 run-name: 'Example Git Hub Events'
 
 on:
-  push: [main]
+  push:
+    branches:
+      - '!main'
+      - 'releases/**'
 
 jobs:
   print_context:
