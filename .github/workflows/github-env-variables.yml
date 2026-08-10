@@ -11,4 +11,7 @@ jobs:
   env_variables_example:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'github_actor is ${{ github.env }}'
+      - env:
+          name: 'manamohan'
+          role: 'TC'
+        run: echo 'Name is $name , Role is $role'
