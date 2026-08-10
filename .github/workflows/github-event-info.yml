@@ -16,13 +16,13 @@ jobs:
           echo $EVENT_CONTEXT | jq .
 
   conditional_run:
-    if: github.event.commits.author.name == 'Random Author'
+    if: github.event.head_commit.author.name == 'Random Author'
     runs-on: ubuntu-latest
     steps:
       - run: echo 'The Author is Random Author'
 
   conditional_run2:
-    if: github.event.commits.author.name != 'Random Author'
+    if: github.event.head_commit.author.name == 'Manamohan Samal'
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'The Author is ${{ github.event.commits.author.name }}'
+      - run: echo 'The Author is ${{ github.event.head_commit.author.name }}'
