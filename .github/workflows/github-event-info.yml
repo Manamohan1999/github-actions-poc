@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: GitHub Events Demo
 run-name: 'Example Git Hub Events'
 
 on:
