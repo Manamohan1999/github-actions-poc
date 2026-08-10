@@ -4,7 +4,8 @@ run-name: 'Example Git Hub Events'
 on:
   push:
     branches:
-      - main
+      - '!main'
+      - 'releases/**'
 
 
 jobs:
