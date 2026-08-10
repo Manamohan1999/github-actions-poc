@@ -14,3 +14,15 @@ jobs:
           EVENT_CONTEXT: ${{ toJSON(github.event) }}
         run: |
           echo $EVENT_CONTEXT | jq .
+
+  conditional_run:
+    if: github.event.commits.author.name == 'Random Author'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'The Author is Random Author'
+
+  conditional_run2:
+    if: github.event.commits.author.name == 'Manamohan Samal'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'The Author is Manamohan Samal'
