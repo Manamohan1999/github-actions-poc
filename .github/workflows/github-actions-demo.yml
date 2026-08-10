@@ -7,6 +7,17 @@ on:
       - 'releases/**'
       - 'features/**'
       - '!features/bug/**'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
