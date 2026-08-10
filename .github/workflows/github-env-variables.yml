@@ -1,0 +1,14 @@
+name: GitHub Env Demo
+run-name: 'Example Git Hub Events'
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  env_variables_example:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'github_actor is : ${{ GITHUB_ACTOR }}'
