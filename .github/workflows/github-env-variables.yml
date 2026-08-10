@@ -11,4 +11,4 @@ jobs:
   env_variables_example:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'github_actor is ${{ github.actor }}'
+      - run: echo 'github_actor is ${{ github.env }}'
