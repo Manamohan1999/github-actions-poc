@@ -24,7 +24,6 @@ jobs:
 
   conditional_run2:
     needs:
-      - print_context
       - conditional_run
     if: github.event.head_commit.author.name == 'Manamohan Samal'
     runs-on: ubuntu-latest
