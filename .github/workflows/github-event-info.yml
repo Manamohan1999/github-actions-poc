@@ -4,8 +4,7 @@ run-name: 'Example Git Hub Events'
 on:
   push:
     branches:
-      - '!main'
-      - 'releases/**'
+      - main
 
 jobs:
   print_context:
