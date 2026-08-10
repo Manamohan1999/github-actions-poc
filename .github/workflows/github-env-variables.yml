@@ -14,4 +14,4 @@ jobs:
       - env:
           name: 'manamohan'
           role: 'TC'
-        run: echo 'Name is $name , Role is $role'
+        run: echo 'Name is ${{ name }} , Role is ${{ role }}'
