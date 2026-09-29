@@ -1,0 +1,4 @@
+salesforce:
+  clientId: '3MVG9dAEux2v1sLvLPP2F1ZbyL.yeYxqRg8aw2GoKS4DGIlPS8nqf6bSB4YzRFj_dEimG_F2vnM.DzVL3u4Qx'
+  tokenUrl: 'https://orgfarm-a4338347c6-dev-ed.develop.my.salesforce.com/services/oauth2/token'
+clientSecret: 56042D26A2FF12107D7CCDC31E815F26AE85854F2BC677A965ACF1391A763F39
